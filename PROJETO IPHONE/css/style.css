@@ -1,53 +1,56 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: verdana;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
 }
 
 /* menu de navegação principal */
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #header-container {
-  background-color: #333;
+    background-color: #333;
+
 }
 
 #header-container nav {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
+
 }
 
 #nav-bar a {
-  color: #ccc;
-  font-size: 0.7rem;
+    color: #ccc;
+    font-size: 0.7rem;
 }
 
 #nav-bar ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* submenu de navegação */
 
 #header-line {
-    border-bottom:  1px solid #ccc;
-    
+    border-bottom: 1px solid #ccc;
+
 }
+
 #header-linesub {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 13px;
 }
 
 #header-linesub ul {
@@ -66,20 +69,20 @@ a {
     margin: 0 1rem;
 }
 
-#header-linesub a { 
+#header-linesub a {
     color: #333;
 }
 
- #header-linesub #btn {
+#header-linesub #btn {
     background-color: #0071e3;
     border-radius: 10rem;
-   padding: 8px 18px;
-   color: #fff;
-   opacity: 0.8;
-   transition: 0.5s;
+    padding: 8px 18px;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
-#header-linesub #btn:hover{
+#header-linesub #btn:hover {
     color: #ffffff9f;
 }
 
@@ -89,7 +92,7 @@ a {
     padding: 1.2rem 0;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .main-desconto {
@@ -102,16 +105,16 @@ a {
 
 .main-desconto p {
     font-size: 0.8rem;
-    
+
 }
 
 .main-desconto a {
-    color:#0071e3;
+    color: #0071e3;
 }
 
 #main-container .iphone-pro {
     font-size: 1.8rem;
-    
+
 }
 
 #main-container #iphone-pro {
@@ -128,9 +131,9 @@ a {
 /* main container  */
 
 #main-container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #main-container #anuncio {
@@ -173,12 +176,9 @@ a {
 }
 
 
-#main-container #img-iphone img.changing {
-    
+#main-container #img-iphone .prduto-img.changing {
     opacity: 0.5;
-    
 }
-
 
 #image-picker {
     margin-bottom: 500px;
@@ -195,7 +195,6 @@ a {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    
 }
 
 #image-picker li .color {
@@ -211,7 +210,7 @@ a {
     font-size: 0.7rem;
     color: #1d1d1d;
     margin-top: 0.6rem;
-} 
+}
 
 #green .color {
     background-color: #394c38;
@@ -235,4 +234,40 @@ a {
 
 .selector {
     outline: 2px solid #43a1ff;
+}
+
+
+@media (max-width: 480px) {
+    #nav-bar li {
+        display: none;
+    }
+
+    #nav-bar #logo {
+        display: flex;
+    }
+
+    #header-line a {
+        display: none;
+    }
+
+    #header-line #btn {
+        display: flex;
+    }
+
+    #avista {
+        text-align: center;
+    }
+
+    #main-container {
+        padding: 3rem;
+    }
+
+    #h1-destaque h1 {
+        font-size: 3rem;
+    }
+
+    #img-iphone img {
+        width: 470px;
+    }
+
 }
